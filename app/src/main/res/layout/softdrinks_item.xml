@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/coca" />
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/image_view"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/itemname"
+            android:gravity=""
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <!--<Spinner-->
+            <!--android:id="@+id/spinnerOfferType"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_constraintRight_toRightOf="parent"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:layout_constraintLeft_toLeftOf="parent"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:layout_constraintTop_toTopOf="parent"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginEnd="8dp"/>-->
+
+        </LinearLayout>
+
+</RelativeLayout>
