@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="horizontal_size">16dp</dimen>
+    <dimen name="vertical_size">16dp</dimen>
+    <dimen name="layout_width">100dp</dimen>
+    <dimen name="layout_height">100dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+</resources>

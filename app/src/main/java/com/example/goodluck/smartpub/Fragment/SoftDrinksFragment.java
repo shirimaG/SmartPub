@@ -1,7 +1,5 @@
-package com.example.goodluck.smartpub;
+package com.example.goodluck.smartpub.Fragment;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -10,16 +8,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.goodluck.smartpub.Adapter.SoftDrinksAdapter;
+import com.example.goodluck.smartpub.Model.AbstractModel;
+import com.example.goodluck.smartpub.R;
+
 import java.util.ArrayList;
-
-
 
 public class SoftDrinksFragment extends Fragment {
 
     private RecyclerView recyclerView;
-    private  SoftDrinksAdapter mAdapter;
+    private SoftDrinksAdapter mAdapter;
     private ArrayList<AbstractModel> itemList = new ArrayList<>();
-
 
     public SoftDrinksFragment() {
         // Required empty public constructor
@@ -49,19 +48,15 @@ public class SoftDrinksFragment extends Fragment {
     }
 
     private void setAdapter(){
-        itemList.add(new AbstractModel("Coca cola",R.drawable.coca));
-        itemList.add(new AbstractModel("Coca cola",R.drawable.coca));
-        itemList.add(new AbstractModel("Coca cola",R.drawable.coca));
-        itemList.add(new AbstractModel("Coca cola",R.drawable.coca));
-        itemList.add(new AbstractModel("Coca cola",R.drawable.coca));
-        itemList.add(new AbstractModel("Coca cola",R.drawable.coca));
-        itemList.add(new AbstractModel("Coca cola",R.drawable.coca));
-        itemList.add(new AbstractModel("Coca cola",R.drawable.coca));
-        itemList.add(new AbstractModel("Coca cola",R.drawable.coca));
-        itemList.add(new AbstractModel("Coca cola",R.drawable.coca));
-        itemList.add(new AbstractModel("Coca cola",R.drawable.coca));
-        itemList.add(new AbstractModel("Coca cola",R.drawable.coca));
-        itemList.add(new AbstractModel("Coca cola",R.drawable.coca));
+        itemList.add(new AbstractModel("Coca cola Light",R.drawable.coca_light));
+        itemList.add(new AbstractModel("Fanta Orange",R.drawable.fanta_orange));
+        itemList.add(new AbstractModel("Sprite",R.drawable.sprite));
+        itemList.add(new AbstractModel("7 Up",R.drawable.sevenup));
+        itemList.add(new AbstractModel("Coca cola Zero",R.drawable.coca_zero));
+        itemList.add(new AbstractModel("Pepsi",R.drawable.pepsi));
+        itemList.add(new AbstractModel("Coca cola",R.drawable.coca_red));
+        itemList.add(new AbstractModel("Dr Pepper",R.drawable.drpepper));
+        itemList.add(new AbstractModel("Vita Cola",R.drawable.vita_cola));
 
     }
 }

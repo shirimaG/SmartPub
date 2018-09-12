@@ -1,4 +1,4 @@
-package com.example.goodluck.smartpub;
+package com.example.goodluck.smartpub.Adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,32 +8,39 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.goodluck.smartpub.Model.AbstractModel;
+import com.example.goodluck.smartpub.R;
+
 import java.util.ArrayList;
 
-public class SoftDrinksAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
+/**
+ * {@link RecyclerView.Adapter} that can display a {link DummyItem} and makes a call to the
+ * specified {link OnListFragmentInteractionListener}.
+ */
+public class BeersAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
 
     private Context context;
     private ArrayList<AbstractModel> itemList;
 
-    public SoftDrinksAdapter(Context context, ArrayList<AbstractModel> itemList) {
+    public BeersAdapter(Context context, ArrayList<AbstractModel> itemList) {
         this.context = context;
         this.itemList = itemList;
 
     }
 
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.softdrinks_item,viewGroup,false);
+    public BeersAdapter.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.beer_item_list,viewGroup,false);
 
-        return new ViewHolder(view);
+        return new BeersAdapter.ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
         //Here you can fill your row view
-        if (holder instanceof ViewHolder){
+        if (holder instanceof BeersAdapter.ViewHolder){
             final AbstractModel model = getItem(position);
-            ViewHolder genericViewHolder = (ViewHolder) holder;
+            BeersAdapter.ViewHolder genericViewHolder = (BeersAdapter.ViewHolder) holder;
 
             genericViewHolder.mItemName.setText(model.getItemName());
             genericViewHolder.imageSrc.setImageResource(model.getImageResourceId());

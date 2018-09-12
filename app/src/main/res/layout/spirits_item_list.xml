@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_height"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="@dimen/layout_width"
+        android:layout_height="@dimen/layout_height"
+        android:src="@drawable/coca_cola_btle"
+        android:contentDescription="@string/sample_product_image" />
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/image_view"
+        android:layout_toEndOf="@+id/image_view"
+        android:paddingLeft="@dimen/horizontal_size"
+        android:paddingStart="@dimen/horizontal_size"
+        android:paddingRight="0dp"
+        android:paddingEnd="0dp">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/itemName3"
+            android:gravity=""
+            android:textColor="@color/colorText"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

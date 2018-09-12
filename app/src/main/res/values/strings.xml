@@ -1,9 +1,13 @@
 <resources>
-    <string name="app_name">Smartpub</string>
+    <string name="app_name">SmartPub</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="itemname">Coca Cola</string>
+    <string name="itemName">Coca Cola</string>
+    <string name="itemName2">Heinkein</string>
+    <string name="itemName3">K_Vant</string>
     <string name="SoftDrinks">Soft Drinks</string>
+    <string name="Beers">Beers</string>
+    <string name="Spirits">Spirits</string>
+    <string name="sample_product_image">Sample Product Image</string>
 </resources>

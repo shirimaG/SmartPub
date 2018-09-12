@@ -1,4 +1,4 @@
-package com.example.goodluck.smartpub;
+package com.example.goodluck.smartpub.Model;
 
 public class AbstractModel {
     private String itemName;

@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
+import com.example.goodluck.smartpub.Adapter.CategoryAdapter;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -13,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Call for tool bar for the app
+        //Call for toolbar for the app
         Toolbar myToolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
 
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
 
         // Find the tab layout that shows the tabs
-        //Dont forget to add "implementation 'com.android.support:design:26.1.0'"  dependece
+        //Do not forget to add "implementation 'com.android.support:design:26.1.0'" dependence
         TabLayout tabLayout = findViewById(R.id.tabs);
 
         // Connect the tab layout with the view pager. This will
